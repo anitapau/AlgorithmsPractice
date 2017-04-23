@@ -9,10 +9,16 @@ public class FindExcludeSum {
 		System.out.println(object.findExceludeSum(array));
 	}
 	
+	
+	/**
+	 * Method to get sum
+ 	 * @param theArray as parameter
+	 * @return non adjacent max sum 
+	 */
 	public int findExceludeSum(int[] theArray) {
 		int excl=0;
 		int incl = theArray[0];
-		int newExcl = 0;
+		int newExcl = 0; //new Exclude
 		for(int i = 1; i < theArray.length; i++) {
 			if(incl > excl) {
 				newExcl = incl;
